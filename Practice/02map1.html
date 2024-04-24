@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const radius = [1,2,3,4,5];
+
+        const area = radius.map((v)=>{
+            return v*v*Math.PI
+        })
+        console.log(area);
+
+        // document.write(radius * radius)
+        // document.write(Math.PI)
+        // console.log(radius);
+
+        const op = []
+
+        // op.push(1,2)
+
+        for(i=0;i<radius.length;i++){
+            op.push(radius[i]*radius[i]*Math.PI)
+        }
+
+        console.log(op);
+    </script>
+</body>
+</html>

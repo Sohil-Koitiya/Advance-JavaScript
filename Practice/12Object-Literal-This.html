@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /// Object Literal
+
+        const test = {
+            n:1,
+            "n":2,
+            "n2":3
+        }
+
+        // console.log(test.n);
+        // console.log(test.n);
+        // console.log(test.n2);
+
+        const students = {
+            fname: "Sohil",
+            lname: "Koitiya",
+            fullname: ()=>{
+                return students.fname + " " + students.lname
+            }
+        }
+
+        console.log(students.fullname());
+
+    </script>
+</body>
+</html>
