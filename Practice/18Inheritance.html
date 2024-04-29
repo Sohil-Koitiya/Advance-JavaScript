@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class Parent{
+            money = 2500000;
+            Properties()
+            {
+                console.log("parent...!");
+            }
+        }
+
+        class Child extends Parent
+        {
+            ChildProp(){
+                console.log("child!!!");
+            }
+        }
+        
+        const obj = new Parent;
+        const obj1 = new Child;
+
+        obj.Properties();
+        obj1.ChildProp();
+        console.log(obj.money);
+        obj1.Properties();
+        console.log(obj1.money);
+    </script>
+</body>
+</html>

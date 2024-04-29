@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        class Bank
+        {
+            n = 12;
+
+            x = function BankDetails(pin,bal) {
+
+                let atmpin = pin;
+                let balance = bal;
+                let bankname = "HDFC";
+                let IFSC = "HDFC000N";
+
+                console.log(atmpin,balance,bankname,IFSC);
+            }
+
+            static Database(){
+                console.log(Database);
+            }
+        }
+        
+        const Akshay = new Bank;
+        const Sohil = new Bank;
+
+        // console.log(Akshay,Sohil);
+
+        Akshay.x(1234,3456);
+        Sohil.x(4567,8907);
+
+        // console.log(Akshay.n);
+        // Sohil.Database();
+        Bank.Database();
+
+    </script>
+
+</body>
+</html>

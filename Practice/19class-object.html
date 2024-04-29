@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class Test
+        {
+            x = 1;
+            y = "hi";
+            z = [12,34,"hi"];
+        }
+
+        const obj1 = new Test;
+        const obj2 = new Test;
+
+        // console.log(obj1.x);
+        // console.log(obj1.y);
+        // console.log(obj1.z);
+        // console.log(obj2.x);
+        // console.log(obj2.y);
+        // console.log(obj2.z[0]);
+        // console.log(obj2.z[1]);
+        // console.log(obj2.z[2]);
+
+        class Test1
+        {
+            x = function fun1() {
+                console.log("fun1");
+            }
+
+            y = function () {
+                let y = 23;
+                console.log("Anonymous" + " " + y);
+            }
+
+            z = ()=>
+            {
+                console.log("Arrow");
+            }
+
+            fun2()
+            {
+                console.log("fun2");
+            }
+
+            funX(x){
+                console.log(x);
+            }
+
+            static exStatic ()
+            {
+                console.log('static');
+            }
+
+            constructor(x)
+            {
+                console.log(x);
+            }
+        }
+
+        const ob1 = new Test;
+        const ob2 = new Test1;
+        const ob3 = new Test1;
+        
+        // ob1.x();
+        // ob1.funX(123);
+        ob2.fun2();
+        ob2.funX(12);
+        ob2.x();
+        ob2.y();
+        ob2.z();
+        ob3.fun2();
+        ob3.funX(125);
+        ob3.x();
+        ob3.y();
+        ob3.z();
+        console.log(ob1.x);
+        console.log(ob1.y);
+        console.log(ob1.z);
+        Test1.exStatic();
+
+
+    </script>
+</body>
+</html>
